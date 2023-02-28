@@ -10,6 +10,7 @@ lists.DisplayList();
 Console.WriteLine("*SORT*");
 lists.list.Sort();
 lists.DisplayList();
+Console.WriteLine("--------------------------------------");
 //LinQ
 List<Person> GetEmplyees()
 {
@@ -60,6 +61,7 @@ else
 {
     Console.WriteLine("Bob not found!");
 }
+Console.WriteLine("--------------------------------------");
 //Wyr.Lambda
 List<Person> youngEmployees1 = employees.Where(e=>e.GetDateOfBirth()>new DateTime(2000,1,1)).ToList();
 Console.WriteLine($"Young employees: {youngEmployees1.Count}");
@@ -72,6 +74,7 @@ else
 {
     Console.WriteLine("Bob not found!");
 }
+Console.WriteLine("--------------------------------------");
 //Słownik
 Dictionary<string,Currency> GetCurrencies()
 {
@@ -102,6 +105,7 @@ if(usrInput!=null)
     currencies.Remove("usd");
     currencies.TryAdd("usd", new Currency("usd", "United States Dollar", 1));
 }
+Console.WriteLine("--------------------------------------");
 // słowo var
 //zastosujemy je tylko przy definicji zmiennych, nie deklaracji
 
@@ -136,3 +140,4 @@ foreach(int i in yieldedData)
 {
     Console.WriteLine(i);
 }
+Console.WriteLine("--------------------------------------");
